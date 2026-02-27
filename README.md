@@ -14,7 +14,7 @@ Công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, 
 
 **Recommended reading:** 
 
-(Release 1.0) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0.txt
+(Release 1.0) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0.txt
 
 **Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
 
