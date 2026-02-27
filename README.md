@@ -8,7 +8,7 @@ This work is an early-stage theoretical exploration developed independently by a
 
 Công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
 
-# Access : 
+# Access (Truy cập) : 
 
 **Major languages:** English, Vietnamese
 
@@ -19,7 +19,7 @@ Công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, 
 **Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
 
 
-# Author :
+# Author (Tác giả) :
 
 Full name : Dang Dinh Phu Hung (Đặng Đình Phú Hưng)
 
