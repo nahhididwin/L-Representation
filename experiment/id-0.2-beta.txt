@@ -1,1 +1,338 @@
+# L-Representation — Biểu diễn Thống nhất Toán học & Hình học bằng một số nguyên duy nhất L
+
+Ngôn ngữ: Tiếng Việt, tiếng Anh. 
+
+**Tóm tắt (Abstract)**
+
+L-Representation (L-Rep) là một phương pháp biểu diễn mọi đối tượng toán-hình học rời rạc hoặc liên tục (điểm, vector, đường cong, bề mặt, đa tạp, hàm, spectral coefficients, SDF, v.v.) thành một số nguyên duy nhất L. Mục tiêu: cho phép thao tác hình học/phép toán số trên toàn bộ đối tượng bằng các phép toán nguyên (add/mul/shift/bitwise) với độ chính xác được kiểm soát, và thực hiện hiệu quả trên phần cứng chuyên dụng (FPGA/ASIC). Tài liệu này đưa ra: (1) mô hình toán học chính xác của mã hóa, (2) chứng minh điều kiện để các phép toán nguyên tương đương với phép toán hình học mong muốn, (3) thuật toán/chiến lược giải quyết overflow và precision, (4) thiết kế phần cứng khả thi (L-ALU, ISA, pipeline), và (5) lộ trình triển khai.
+
+
+**1. Mô hình toán học (Formal model)**
+
+**1.1. Không gian trường & biểu diễn tuple**
+
+\mathcal{F} là tập các trường (fields) cần lưu để tả một đối tượng. Mỗi đối tượng $O$ biểu diễn dưới dạng $m$-tuple số nguyên không âm:
+\[
+f(O) = (f_0, f_1, \dots, f_{m-1}), \quad f_i \in \mathbb{Z}_{\geq 0}.
+\]
+
+Mỗi trường có ý nghĩa (ví dụ: $x_0, y_0, z_0$, side, $a_0, a_1$, ... hoặc block của hệ Fourier).
+
+\subsection{1.2. Mã hóa mixed-radix (base $B$)}
+
+Chọn một cơ số $B \in \mathbb{Z}$, $B \geq 2$ cố định (thực tế chọn $B = 2^k$ cho tích hợp phần cứng). Mã hóa ánh xạ $\mathbf{f}$ sang số nguyên $L$:
+\[
+L = \mathrm{enc}_B(\mathbf{f}) = \sum_{i=0}^{m-1} f_i B^i.
+\]
+
+Gọi đây là biểu diễn nguyên duy nhất nếu $f_i$ đã chuẩn hóa sao cho $0 \leq f_i < B$. (Nếu cần trường có kích thước mọi thực tế thay đổi, dùng length-prefixing — xem \S2.4.)
+
+Chú ý thực tế: Ở mức phần cứng, base $2^k$ là ưu; mọi lý luận dưới đây áp dụng cho base tổng quát $B$.
+
+\subsection{1.3. Hàm giải mã}
+
+Giải mã trường thứ $i$ từ $L$:
+\[
+f_i = \left\lfloor \frac{L}{B^i} \right\rfloor \mod B.
+\]
+
+Tất cả phép trích trường là phép chia nguyên/modulo theo cơ số $B$.
+
+\subsection{2. Quy tắc mã hóa chuẩn (spec formal)}
+
+\subsection{2.1. Cấu trúc tổng quát}
+
+\subsubsection{}
+
+Mỗi $L$ lưu theo cấu trúc: header cố định + các field packed. Ta định nghĩa header gồm các trường cố định (độ dài bằng số block theo base $B$):
+\begin{itemize}
+\item Version: 1 block
+\item Type: 1 block (mã loại đối tượng)
+\item Dimension $d$: 1 block (số bit/số fract)
+\item Precision $P$: 1 block (số bit/chữ số fract)
+\item Number of subfields $m$: 1 block (hoặc length-prefixed list)
+\item Metadata length: 1 block (nếu cần length-prefixed list)
+\item Fields: $m$ block tiếp theo (các $f_i$)
+\end{itemize}
+
+Mỗi ``block'' tương đương một coefficient trong mã mixed-radix base $B$.
+
+\subsubsection{2.2. Thông số thiết kế cơ bản}
+
+\begin{itemize}
+\item Chọn $k$ sao cho $B = 2^k$. Ví dụ $k = 32, 64, 128$ hoặc multiples theo nhu cầu.
+\item Mỗi field $f_i$ được cấp $k$ bit (hoặc nhiều block nếu cần độ dài lớn).
+\item Nếu field cần độ chính xác cao hơn $k$: đặt nó dùng $r$ block liên tiếp (multi-block field).
+\end{itemize}
+
+\subsubsection{2.3. Fixed-point / Rational encoding}
+
+\textbf{Fixed-point} Cần precision $P$ fractional bits; giá trị $x$ được mã hóa là $\hat{x} = \lfloor x \cdot 2^P \rfloor$. Lưu $\hat{x}$ vào $P$ fractional field (khi cần precision; dùng twos-complement; giá trị $\hat{x}$ negative vào twos-complement hoặc sign field).
+
+\textbf{Rational} $p/q$ hai field liên tiếp: numerator $p$, denominator $q$ (đảm bảo gcd nếu muốn canonicalization).
+
+\subsubsection{2.4. Length-prefixed \& hierarchical}
+
+Để cho phép trường thay đổi, dùng scheme length-prefixed: một block chứa độ dài $m$, kế tiếp là $m$ block trường. Con-$L$ (sub-objects) có thể được nest bằng cách lưu pointer kiểu offset hoặc copy của sub-$L$ (tùy nhu cầu). Triết lý: mọi thứ vẫn là tuple; chỉ semantic trên một tập block.
+
+\subsection{3. Tính đúng đắn của phép toán (Correctness)}
+
+\subsubsection{3.1. Định nghĩa phép toán trên tuple}
+
+Định nghĩa hai phép toán cơ bản trên tuple:
+
+\begin{itemize}
+\item Fieldwise addition: $\mathbf{f} + \mathbf{g} = (f_0 + g_0, \dots, f_{m-1} + g_{m-1})$.
+\item Scalar multiply: $s \cdot \mathbf{f} = (s f_0, \dots, s f_{m-1})$.
+\item Fieldwise shift (dùng cho derivative/integration trên polynomial): $\mathrm{shift}_r(\mathbf{f}) = (f_r, f_{r+1}, \dots, 0, \dots)$.
+\end{itemize}
+
+\subsubsection{3.2. Khi phép cộng nguyên $L_1 + L_2$ tương đương fieldwise addition?}
+
+Vấn đề chính: phép cộng nguyên chuẩn có thể sinh carry sang block kế tiếp, làm vỡ tính tách rời các field.
+
+Để đảm bảo (No-carry condition): Chọn $B$ và giới hạn $f_i$ sao cho mọi tổng $f_i + g_i < B$. Khi đó:
+\[
+\mathrm{enc}_B(\mathbf{f}) + \mathrm{enc}_B(\mathbf{g}) = \mathrm{enc}_B(\mathbf{f} + \mathbf{g}).
+\]
+
+Chứng minh (sketch): Khi $f_i + g_i < B$ thì không có carry. Việc cộng diễn ra độc lập trên từng digit base $B$. (Tính chất cơ bản của mixed-radix.)
+
+\subsubsection{3.3. Giải pháp khi tổng vượt giới hạn (guard/overflow handling)}
+
+\begin{itemize}
+\item Guard bits: dành một số block guard $G$ cho mỗi field; mỗi field thực $f_i^{(\mathrm{real})}$ được lưu vào vùng có dung lượng $B' < B$ để $f_i^{(\mathrm{real})} + g_i^{(\mathrm{real})}$ luôn $< B$.
+\item Saturating / modular semantics: Có thể định nghĩa phép cộng là saturating (clamp) hoặc modular với normalization pass.
+\item Hardware fieldwise add: thay vì rely vào carry của integer add, triển khai thao tác: giải nén (mask+shift) $\to$ $r$-song song add trên từng field (có thể làm trong $O(1)$ với wide datapath và $k$-bit adders hoạt động song song) $\to$ đóng gói lại. Phần cứng chuyên dụng, ta cung cấp primitive ``parallel field add'' (L\_ADD\_FIELDWISE) để đảm bảo semantics.
+\end{itemize}
+
+\subsubsection{3.4. Nhân (scale) và phép toán polynomial}
+
+\begin{itemize}
+\item Scale (scalar multiply): Thực hiện nhân trên mỗi field độc lập; cần guard để tránh overflow: $s f_i < B$.
+\item Phép nhân hai $L$ (convolution): nếu muốn nhân hai đối tượng theo nghĩa toán học (ví dụ convolution hệ số), ta phải xử lý cross-field products (như polynomial multiplication). Kết quả có thể chiếm nhiều block hơn — mô tả bằng convolution của coefficients (FFT-based hoặc schoolbook). Mã hóa cho phép nhân này nhưng cần rule phân bổ result fields.
+\end{itemize}
+
+\subsubsection{3.5. Đạo hàm / tích phân cho polynomial}
+
+Nếu polynomial coefficients $a_0, a_1, \dots, a_n$ được lưu theo block theo index (ví dụ $f_0 = a_0, f_1 = a_1, \dots$), thì:
+
+Đạo hàm: $a'_i = (i+1) \cdot a_{i+1} \Rightarrow$ thực hiện: shift left index bằng 1 (trong tuple) và nhân từng hệ số với chữ số index. Trên phần cứng, thì thực hiện bằng phép shift của field indices + scalar multiplies trên từng field.
+
+Tích phân tương tự bằng shift phải + divide by index (chia integer fixed-point). Cần đảm bảo chia có nghĩa trong fixed-point (sử dụng bổ sung precision).
+
+Chứng minh tính đúng: tuân theo quy ước coefficients mapping. Toàn bộ phép toán là composed của per-field arithmetic và field-index permutations — được ánh xạ vào shift/mask/parallel mul.
+
+\subsection{4. Các loại đối tượng \& thao tác biểu diễn}
+
+\subsubsection{4.1. Điểm, vector, hình đơn giản}
+
+Ví dụ: Point ở $d$-chiều với fixed-point precision $P$:
+
+\[
+\mathbf{f} = (x_0, \dots, x_{d-1}), \quad x_j = \lfloor X_j \cdot 2^P \rfloor.
+\]
+
+Encode: header + fields.
+
+\subsubsection{4.2. Polynomials}
+
+Coefficients packed theo index để làm đạo hàm/tích phân bằng shift + scalar multiply/divide.
+
+\subsubsection{4.3. Spectral (Fourier/Chebyshev)}
+
+Lưu khối (block) coefficients phức (real/imag) hoặc chỉ magnitude/phase; linear ops (add, scalar mult, differentiation in spectral domain) đều là per-coefficient linear ops — tương ứng tới per-field ops.
+
+\subsubsection{4.4. Implicit shapes (SDF)}
+
+Lưu tham số SDF cơ bản (center, radius, coefficients) hoặc lưu combinator:
+
+\begin{itemize}
+\item Nếu SDF đơn giản: fields = parameters.
+\item Nếu SDF là kết hợp (union, intersection, difference), thay vì thực hiện pointwise min/max trên mesh, ta encode operator node:
+\[
+L = \mathrm{enc}(\mathrm{OP\_MIN}, L_A, L_B)
+\]
+tức là $L$ lưu tham chiếu/offset đến sub-$L$. Việc ``min'' functionally là biểu thức mới; evaluation SDF tại một điểm $x$ vẫn cần decode sub-$L$s và evaluate (ở chỗ này không tồn tại phép toán toán cục nào biến 2 SDF thành SDF mới mà không giữ cấu trúc biểu thức — ta lưu operator).
+\end{itemize}
+
+Ghi chú quan trọng: Một số phép toán non-linear (ví dụ min, abs, clamp) không thể hiện hoàn toàn dưới dạng single integer algebraic without pointers/operator nodes, nên hệ thống phải hỗ trợ encoding of operators (thay vì cố gắng ép mọi thứ thành single flat tuple of numeric params).
+
+\subsection{5. Thuật toán \& độ phức tạp}
+
+\subsubsection{5.1. Chí phí theo kích thước $L$}
+
+Độ phức tạp thao tác tỉ lệ với số blocks $m$ (số field) — tức là số digit theo base $B$. Ta ký hiệu $n := m$.
+
+\begin{itemize}
+\item Truy xuất field (extract): $O(1)$ với hardware wide-shift+mask (chi phí ở throughput/bitwidth).
+\item Fieldwise add (naive on CPU): $O(n)$ word operations; trên phần cứng vectorized, latency có thể là $O(1)$ trong nghĩa số chu kỳ nhỏ cố định (tỉ lệ theo độ rộng datapath).
+\item Polynomial conv (full multiply): $O(\log n)$ nếu dùng FFT-based convolution on coefficient blocks, hoặc $O(n \log n)$ nếu dùng FFT-based; $O(n^2)$ schoolbook.
+\end{itemize}
+
+\subsubsection{5.2. Hierarchical \& sparse}
+
+\begin{itemize}
+\item Hierarchical packing (quadtree/octree): $L$ chứa sub-$L$ pointers; cập nhật local vùng chỉ thay đổi sub-$L$ — số phần nhỏ $\Rightarrow$ chi phí $O(\log N)$ cho $N =$ số phần tử tổng thể.
+\item Sparse polynomial: chỉ lưu (index, coefficient) pairs — giảm kích thước.
+\end{itemize}
+
+Kết luận: không có phép thần kỳ khiến mọi thao tác tính học phức tạp thành $O(1)$ trường hợp tổng quát; tuy nhiên, nhiều phép tuyến tính và một số thao tác toàn cục (ví dụ translation = fieldwise add of coordinate fields) trở nên cực kỳ rẻ.
+
+\subsection{6. Thiết kế phần cứng khả thi (FPGA/ASIC)}
+
+\subsubsection{6.1. Nguyên lý phần cứng}
+
+Hai primitive quan trọng nên hỗ trợ ở cấp ISA/ALU:
+
+\begin{enumerate}
+\item $\mathrm{L\_FIELD\_EXTRACT}$(mask, index\_len): trích n-field song song (shift + mask).
+\item $\mathrm{L\_FIELD\_OP}$(op, parallel\_width): thực hiện op (ADD/MUL/SHIFT/SCALAR-MUL) trên từng field song song, với normalization/overflow song song.
+\end{enumerate}
+
+Thiết kế đề xuất: $L$-ALU — datapath bit-slice, pipeline stages:
+
+\begin{itemize}
+\item Stage 1: load $L$ vào bank registers (wide).
+\item Stage 2: field-extract via shift network (array of k-bit adders/multipliers, hoạt động SIMD-style).
+\item Stage 3: per-field arithmetic units (array of k-bit adders/multipliers), hoạt động SIMD-style.
+\item Stage 4: normalization (check carries, saturate/propagate).
+\item Stage 5: pack back fields $\to$ output $L$.
+\end{itemize}
+
+\subsubsection{6.2. Thực thi add toàn cục mà không carry giữa field}
+
+Hai cách:
+
+\begin{itemize}
+\item Mask-and-add: tách fields (shift+and), add parallel, clamp, recompose. Phù hợp với FPGA/ASIC bằng LUTs và k-bit adders.
+\item Guard-base integer add: chọn base $B$ lớn và reserve guard bits để đảm bảo integer add thông thường.
+\end{itemize}
+
+không tạo carry cross-field; nhưng nếu nhiều field add xảy ra vượt giới hạn, phải thực hiện normalization pass. Guard approach nhanh nhưng rủi ro nếu không dimensioned đúng.
+
+\subsubsection{6.3. Thực thi multiplication \& convolution}
+
+\begin{itemize}
+\item Scalar multiply: array of per-field multipliers (can be DSP blocks on FPGA).
+\item Polynomial multiplication: implement NTT/FFT on blocks (treat blocks as coefficient words), hoặc streaming schoolbook nếu small degree.
+\item Spectral timestep (in spectral space): thực hiện linear ops per coefficient + non-linear conv timestep (Navier-Stokes in implemented): thực hiện linear ops per coefficient + convolution handled via convolution kernels implemented in hardware using FFT cores.
+\end{itemize}
+
+\subsubsection{6.4. Instruction set (gợi ý)}
+
+\begin{itemize}
+\item $\mathrm{L\_LOAD}$, $\mathrm{L\_STORE}$
+\item $\mathrm{L\_ADD\_FIELDWISE}$ dst, a, b
+\item $\mathrm{L\_SCALAR\_MUL}$ dst, a, s
+\item $\mathrm{L\_SHIFT\_FIELDS}$ dst, a, r (shift index)
+\item $\mathrm{L\_EXTRACT\_FIELD}$ dst\_field, a, i
+\item $\mathrm{L\_COMPOSE}$ dst, header, fields... (tạo operator node cho SDF union/intersection)
+\item $\mathrm{L\_OP\_NODE}$ dst, OP\_TYPE, a, b (tạo operator node cho SDF union/intersection)
+\item $\mathrm{L\_DERIV\_POLY}$ dst, a (specialized kernel)
+\end{itemize}
+
+\subsubsection{6.5. Pipeline \& latency}
+
+Với datapath width $W$ bits và field size $k$: number of fields $n = W/k$ processed in one pass.
+
+For very large $W$ (up to 1M bits), chip may implement segmented pipeline: process blocks sequentially multiple cycles but with streaming throughput.
+
+\subsubsection{6.6. Resource \& timing ước lượng (qualitative)}
+
+Sử dụng carry-save adders và parallel prefix adders cho latency thấp. Với FPGA hiện đại: BRAM lưu $L$, DSP blocks cho multiply, LUT cho masks. ASIC: dùng array multipliers, CLA/Brent-Kung adders, wide buses.
+
+$L$-ASIC có thể thiết kế theo tile: mỗi tile 4096-bit datapath; kết hợp nhiều tile để mở rộng đến 1M-bit.
+
+\subsection{7. An toàn số học — precision, overflow, rounding}
+
+\subsubsection{7.1. Fixed-point guarantees}
+
+\begin{itemize}
+\item Khi dùng fixed-point $P$ bits fractional, phép tuyến tính giữ độ chính xác tuyệt đối (ngoại trừ overflow).
+\item Chia (integration) cần rounding mode (nearest, floor, stochastic).
+\end{itemize}
+
+\subsubsection{7.2. Overflow / carry handling}
+
+\begin{itemize}
+\item Detection / carry: trả status flags nếu bất kỳ field overflow.
+\item Recovery: chọn một trong các chế độ — saturate, wrap (modular), normalize (carry propagate), hoặc raise exception.
+\end{itemize}
+
+\subsubsection{7.3. Canonicalization \& GCD (cho rational)}
+
+\begin{itemize}
+\item Nếu lưu rational $p, q$, canonicalization (chia gcd) có thể được thực hiện khi cần, tốn $O(\mathrm{poly}(\mathrm{len}(p)+\mathrm{len}(q)))$ time.
+\end{itemize}
+
+\subsection{8. Ứng dụng \& ví dụ minh họa}
+
+\subsubsection{8.1. Dịch chuyển toàn cục (translation)}
+
+\begin{itemize}
+\item Đối tượng $A$ fields chứa coordinates $x_i$.
+\item Vector $v$ có fields $v_i$.
+\item Nếu $x_i + v_i < B$ $\forall i$, thì $\mathrm{L\_ADD\_FIELDWISE}(L_A, L_A, L_v)$ là phép dịch chuyển chính xác. Trên hardware: single instruction.
+\end{itemize}
+
+\subsubsection{8.2. Hàm polynomial (ví dụ trong mô tả)}
+
+$f(x)=2+3x+0.5x^2+0.1x^3$ với precision $P$: lưu coefficients scaled. $\mathrm{L\_DERIV\_POLY}(L_f)$ làm shift + per-field multiply by index.
+
+\subsubsection{Spectral fluid timestep}
+
+L chứa spectral coefficients.
+
+\subsubsection{Timestep linear parts: per-field scalar multiplies/adds.}
+
+\subsubsection{Nonlinear conv: gọi kernel convolution (FFT cores) — toàn bộ thao tác vẫn làm trên fields (blocks of coefficients).}
+
+\subsection{9. Các giới hạn thực tế \& tranh luận thực dụng}
+
+\begin{enumerate}
+\item Không phải mọi phép toán đều trở thành $O(1)$ — phép toán global phức tạp (ví dụ boolean set operations geometric trên nhiều thành phần) thường yêu cầu reencode hoặc lưu operator node; chi phí phụ thuộc vào kích thước biểu diễn.
+\item Kích thước $L$ có thể rất lớn — cần chiến lược hierarchical, sparse, và offloading.
+\item Độ tin cậy phụ thuộc strict vào base \& guard provisioning — thiết kế hardware \& compiler phải đảm bảo invariants (no-carry).
+\item Một số thao tác phi tuyến mạnh (min, max, boolean) cần biểu thức operator, không thể đơn giản hóa thành add/mul.
+\end{enumerate}
+
+\subsection{10. Proofs \& Lemmas (tóm tắt chứng minh quan trọng)}
+
+\textbf{Lemma 1 (Uniqueness of encoding)}
+
+Với base $B$ và mỗi $0 \leq f_i < B$, ánh xạ $\mathrm{enc}_B$ từ $\{0, \dots, B-1\}^m$ đến $\{0, \dots, B^m - 1\}$ là song ánh.
+
+Proof sketch: đây là trình bày cơ bản positional numeral system.
+
+\textbf{Lemma 2 (Additivity under no-carry)}
+
+Nếu $f_i + g_i < B$ $\forall i$, thì
+\[
+\mathrm{enc}_B(\mathbf{f}) + \mathrm{enc}_B(\mathbf{g}) = \mathrm{enc}_B(\mathbf{f} + \mathbf{g}).
+\]
+
+Proof sketch: addition in base $B$ per digit without carry.
+
+\textbf{Theorem (Correctness of derivative operator)}
+
+Nếu polynomial coefficients packed fieldwise, thì $\mathrm{L\_DERIV}$ defined as shift + per-field scalar multiply computes coefficient set of derivative exactly in fixed-point arithmetic assuming no overflow and higher precision for multiply results.
+
+Proof sketch: follows từ toán học của đạo hàm polynomial; numeric correctness guaranteed khi multiply result representable in target fields.
+
+\subsection{11. Compiler / Toolchain \& API}
+
+\begin{itemize}
+\item Encoder/Decoder: kiểm soát canonicalization, overflow detection, and hierarchical packing heuristics.
+\item Optimizer: phân tích field usage, đặt guard bits thích hợp, chuyển đổi operator nodes cho hiệu suất.
+\item Runtime: scheduling kernels ($\mathrm{L\_ADD\_FIELDWISE}$, FFT, $\mathrm{L\_CONV}$) trên L-ALU hoặc fallback CPU.
+\end{itemize}
+
+\subsection{12. So sánh với point-cloud / matrix truyền thống}
+
+\begin{itemize}
+\item Point-cloud: thao tác local $O(N)$ update khi thay đổi nhiều điểm; L-Rep có khả năng biểu diễn nhiều mẫu dữ liệu khi chúng có cấu trúc (ví dụ affine transformations) bằng single instruction.
+\item Ma trận dense/sparse: L-Rep thuận lợi cho các biểu diễn coefficient/spectral nếu pack hợp lý.
+\item Không có phép thay thế tổng quát: L-Rep bổ sung thêm layer abstraction cho phép thao tác high-level efficient (translation, linear transforms, per-coefficient ops), nhưng không kỳ diệu đối với mọi bài toán (ví dụ: thay đổi topology phân đoạn vẫn có chi phí).
+\end{itemize}
 
