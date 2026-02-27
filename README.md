@@ -13,7 +13,7 @@ This work is an early-stage theoretical exploration developed independently by a
 
 **Recommended reading:**
 
-**Experiment :**
+**Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
 
 
 # Author :
