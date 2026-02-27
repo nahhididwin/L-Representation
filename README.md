@@ -6,6 +6,7 @@ L-Representation (L-Rep) là một phương pháp biểu diễn mọi đối tư
 
 This work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
 
+Công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
 
 # Access : 
 
