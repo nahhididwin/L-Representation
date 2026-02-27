@@ -22,6 +22,8 @@ Full name : Dang Dinh Phu Hung (Đặng Đình Phú Hưng)
 
 Nation : Vietnam
 
+City : Ho Chi Minh City
+
 Date of birth: https://github.com/nahhididwin/L-Representation/blob/main/main/dob.txt
 
 
