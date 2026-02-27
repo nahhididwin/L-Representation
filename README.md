@@ -32,6 +32,6 @@ Github : https://github.com/nahhididwin
 
 # License :
 
-Read :
+Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
 
 Repositories Public Date () : (DD/MM/YYYY)
