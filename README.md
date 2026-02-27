@@ -28,3 +28,10 @@ Date of birth: https://github.com/nahhididwin/L-Representation/blob/main/main/do
 
 
 Github : https://github.com/nahhididwin
+
+
+# License :
+
+Read :
+
+Repositories Public Date () : (DD/MM/YYYY)
