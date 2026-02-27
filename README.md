@@ -1,5 +1,7 @@
 # L-Representation
 
+L-Representation is a unified and absolutely precise way to represent all mathematical and geometric objects (points, lines, curves, surfaces, solids, functions, physical fields, multidimensional models, etc.) using only a single integer L (using large arbitrary-precision integers).
+
 L-Representation là một cách biểu diễn thống nhất và chính xác tuyệt đối mọi đối tượng toán học & hình học (điểm, đường thẳng, đường cong, mặt, khối, hàm số, trường vật lý, mô phỏng đa chiều…) bằng chỉ đúng một số nguyên duy nhất L (sử dụng số nguyên lớn arbitrary-precision).
 
 # Access : 
