@@ -16,6 +16,5 @@ Full name : Dang Dinh Phu Hung (Đặng Đình Phú Hưng)
 
 Nation : Vietnam
 
-Date of birth: https://github.com/nahhididwin/LIGA/blob/main/files/dob.txt 
-
+Date of birth: 
 Github : https://github.com/nahhididwin
