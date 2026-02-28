@@ -10,3 +10,11 @@ bench/
   bench_ga.py     # microbenchmark GA kernel
 tests/
   test_ga.py
+
+
+## Quickstart
+```bash
+python -m pip install -r requirements.txt   # numpy, optional numba
+python examples/demo_sdf.py
+python bench/bench_ga.py
+python tests/test_ga.py
