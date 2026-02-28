@@ -14,7 +14,6 @@ tests/
 
 ## Quickstart
 ```bash
-python -m pip install -r requirements.txt   # numpy, optional numba
-python examples/demo_sdf.py
+python examples/demo_sdf.py ; OR : python -m examples.demo_sdf
 python bench/bench_ga.py
 python tests/test_ga.py
