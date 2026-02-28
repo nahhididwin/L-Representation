@@ -1,1 +1,5 @@
 haizz
+
+registry = (69269169691,61926912691,367168916)
+
+print(registry[0])
