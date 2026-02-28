@@ -2,6 +2,9 @@
 
 Ngôn ngữ: Tiếng Việt, tiếng Anh. 
 
+Github : https://github.com/nahhididwin/L-Representation
+
+
 **Tóm tắt (Abstract)**
 
 L-Representation (L-Rep) là một phương pháp biểu diễn mọi đối tượng toán-hình học rời rạc hoặc liên tục (điểm, vector, đường cong, bề mặt, đa tạp, hàm, spectral coefficients, SDF, v.v.) thành một số nguyên duy nhất L. Mục tiêu: cho phép thao tác hình học/phép toán số trên toàn bộ đối tượng bằng các phép toán nguyên (add/mul/shift/bitwise) với độ chính xác được kiểm soát, và thực hiện hiệu quả trên phần cứng chuyên dụng (FPGA/ASIC). Tài liệu này đưa ra: (1) mô hình toán học chính xác của mã hóa, (2) chứng minh điều kiện để các phép toán nguyên tương đương với phép toán hình học mong muốn, (3) thuật toán/chiến lược giải quyết overflow và precision, (4) thiết kế phần cứng khả thi (L-ALU, ISA, pipeline), và (5) lộ trình triển khai.
