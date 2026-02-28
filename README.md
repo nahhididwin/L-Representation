@@ -5,9 +5,9 @@ L-Rep is a unified design (representation + ISA + micro-arch + compiler) for enc
 
 L-Rep là một thiết kế thống nhất (representation + ISA + micro-arch + compiler) để mã hoá mọi tham số hình học, đại số hình học (GA/CGA), cấu trúc dữ liệu không gian (BVH/quadtree) và các hàm siêu-phức tạp (transcendental) thành một duy nhất số nguyên L rồi thực thi trực tiếp, với primitives phần cứng (L_GA_MUL, L_FIELD_OP, L_APPROX, L_ALLOC, …) cùng JIT/compiler đảm bảo lỗi và khả năng tính dẫn số tự động.
 
-This work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
+WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
 
-Công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
+Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh **(KHÔNG PHẢI SINH VIÊN)** nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
 
 # Access (Truy cập) : 
 
