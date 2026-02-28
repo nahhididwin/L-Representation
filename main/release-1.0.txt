@@ -4,6 +4,7 @@ Ngôn ngữ: Tiếng Việt, tiếng Anh.
 
 Github : https://github.com/nahhididwin/L-Representation
 
+WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
 
 **Tóm tắt (Abstract)**
 
