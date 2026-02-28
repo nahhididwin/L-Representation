@@ -15,5 +15,5 @@ tests/
 ## Quickstart
 ```bash
 python examples/demo_sdf.py ; OR : python -m examples.demo_sdf
-python bench/bench_ga.py
+python bench/bench_ga.py ; OR : python -m bench.bench_ga
 python tests/test_ga.py
