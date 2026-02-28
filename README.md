@@ -15,9 +15,9 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 **Recommended reading:** 
 
-(Release 1.0 Type A - 28/02/2026 (DD/MM/YYYY) - English/Vietnamese) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.txt
+(Release 1.0 Type A - 28/02/2026 (DD/MM/YYYY) - English) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.txt
 
-(Release 1.0 Type A - 28/02/2026 (DD/MM/YYYY) - English/Vietnamese) (.md) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.md
+(Release 1.0 Type A - 28/02/2026 (DD/MM/YYYY) - English) (.md) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.md
 
 (Release 1.0 Type B - 27/02/2026 (DD/MM/YYYY) - Vietnamese) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0.txt
 
