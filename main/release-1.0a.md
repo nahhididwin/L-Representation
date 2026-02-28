@@ -2,6 +2,8 @@
 
 **Tiêu đề: L-Representation: Turning a Single Integer L into a Universal, Provably-Correct Geometric & Algebraic Engine**
 
+Github : https://github.com/nahhididwin/L-Representation
+
 # Tóm tắt / Abstract
 
 Bài báo này trình bày hoàn chỉnh L-Representation (L-Rep) mở rộng thành một hệ thống toán-hình học tổng quát có khả năng: (1) dịch biểu thức hình học phân cấp (SDF/CSG/scene-graph) sang một L-Virtual Machine (L-VM) được thực thi trực tiếp trên L-ALU với JIT compile vào primitives L_FIELD_OP; (2) nhúng đầy đủ Geometric Algebra (GA / Clifford algebra), đặc biệt Conformal Geometric Algebra (CGA), dưới dạng trường (fields) trong mã L cùng với primitive L_GA_MUL; (3) hỗ trợ native cho cấu trúc dữ liệu động (quadtree/octree/BVH tree) với primitives L_ALLOC/L_FREE/L_INSERT/L_SPLIT_MERGE giữ invariant “một số nguyên duy nhất”; (4) tích hợp trình sinh Chuỗi Taylor/Chebyshev với giới hạn sai số chặt chẽ và automatic differentiation (forward & reverse) trên toàn bộ expression trees. Tài liệu cung cấp mô hình hình thức, định nghĩa ISA, micro-architecture, chứng minh tính đúng đắn, và phân tích độ phức tạp.
