@@ -36,7 +36,7 @@ Github : https://github.com/nahhididwin
 
 **Announcements from the author:**
 
-(28/02/2026) : I'm working on completing it and will be posting it to arXiv soon. Perhaps I'll post it on hacker news later.
+(28/02/2026) : I'm working on completing it and will be posting it to arXiv soon. Perhaps I'll post it on hacker news (YC) later.
 
 
 
