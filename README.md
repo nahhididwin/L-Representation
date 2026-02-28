@@ -29,8 +29,12 @@ City : Ho Chi Minh City
 
 Date of birth: https://github.com/nahhididwin/L-Representation/blob/main/main/dob.txt
 
-
 Github : https://github.com/nahhididwin
+
+**Announcements from the author:**
+
+(28/02/2026) : I'm working on completing it and will be posting it to arXiv soon. Perhaps I'll post it on hacker news later.
+
 
 
 # License :
