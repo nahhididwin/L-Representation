@@ -33,6 +33,8 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 + (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
 
+*Lưu ý : Những files chưa được ghi đường dẫn trực tiếp (link) lên "https://github.com/nahhididwin/L-Representation/blob/main/README.md", thì khả năng cao là files đang trong quá trình thử nghiệm, và vẫn đang trong quá trình làm, vậy nên có thể có sai sót, sự cố nhiều hơn bình thường. Nếu bạn hứng thú và muốn xem những thông tin mới nhất có thể, tôi khuyên bạn nên đọc nó, nhưng dĩ nhiên là sẽ có rủi ro.
+
 # Author (Tác giả) :
 
 Full name : Hung Dinh Phu Dang (Đặng Đình Phú Hưng)
