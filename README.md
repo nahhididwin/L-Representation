@@ -55,7 +55,8 @@ Github : https://github.com/nahhididwin
 
 **Announcements from the author:**
 
-(28/02/2026) : I'm working on completing it and will be posting it to arXiv/zenodo.org soon. Perhaps I'll post it on hacker news (YC) later.
+(01/03/2026 - DD/MM/YYYY) : I'm a little exhausted, but maybe I'll publish it on HN and arXiv soon?
+
 
 
 
