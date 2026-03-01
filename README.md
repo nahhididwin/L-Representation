@@ -1,9 +1,7 @@
 # L-Representation
 
-L-Rep is a unified design (representation + ISA + micro-arch + compiler) for encoding all geometric parameters, geometric algebra (GA/CGA), spatial data structures (BVH/quadtree), and super-complex functions (transcendental) into a single integer L and executing it directly, with hardware primitives (L_GA_MUL, L_FIELD_OP, L_APPROX, L_ALLOC, ...) and JIT/compiler ensuring error tolerance and automatic derivation capabilities.
+L-Representation: Turning a Single Integer \textit{L} into a Universal, Provably-Correct Geometric \& Algebraic Engine
 
-
-L-Rep là một thiết kế thống nhất (representation + ISA + micro-arch + compiler) để mã hoá mọi tham số hình học, đại số hình học (GA/CGA), cấu trúc dữ liệu không gian (BVH/quadtree) và các hàm siêu-phức tạp (transcendental) thành một duy nhất số nguyên L rồi thực thi trực tiếp, với primitives phần cứng (L_GA_MUL, L_FIELD_OP, L_APPROX, L_ALLOC, …) cùng JIT/compiler đảm bảo lỗi và khả năng tính dẫn số tự động.
 
 WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
 
