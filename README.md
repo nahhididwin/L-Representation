@@ -55,7 +55,7 @@ Github : https://github.com/nahhididwin
 
 (01/03/2026 - DD/MM/YYYY) : I'm a little exhausted, but maybe I'll publish it on HN and arXiv soon? ; Kiểu uhhh... mệt vc, nhưng mà cx ko hẳn là mệt :3, nói chung thì chắc up lên HN sau đó thì arxiv btw .-.
 
-(01/03/2026 - DD/MM/YYYY) : Chắc t sẽ đặt tên là "Show HN: One Integer Encodes Full Geometric Algebra, Dynamic Trees, and Autodiff – L-Representation Prototype" :)
+(01/03/2026 - DD/MM/YYYY) : Chắc t sẽ đặt tên là "Show HN: One Integer Encodes Full Geometric Algebra, Dynamic Trees, and Autodiff – L-Representation Prototype and Paper" :)
 
 
 # License :
