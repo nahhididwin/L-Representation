@@ -1,6 +1,6 @@
 # L-Representation
 
-L-Representation: Turning a Single Integer \textit{L} into a Universal, Provably-Correct Geometric \& Algebraic Engine
+L-Representation: Turning a Single Integer L into a Universal, Provably-Correct Geometric \& Algebraic Engine
 
 
 WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
