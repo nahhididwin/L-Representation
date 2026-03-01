@@ -16,7 +16,6 @@ Features implemented in this prototype (proof-of-concept):
 This is a prototype for demo and experimentation. It is intentionally
 self-contained, pure-Python (NumPy optional but highly recommended).
 
-Author: prototype adaptation for Hacker News / YC demo
 Date: 1 March 2026 (prototype)
 """
 
