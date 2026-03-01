@@ -15,6 +15,8 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 **Recommended reading (Theory):** 
 
+(Release 1.0 **Type S++** - // (DD/MM/YYYY) - English) ()
+
 (Release 1.0 **Type A+** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_arXiv.tex
 
 (Release 1.0 **Type A-** - 28/02/2026 (DD/MM/YYYY) - English) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.txt
