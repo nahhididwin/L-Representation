@@ -13,7 +13,7 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 **Major languages:** English, Vietnamese
 
-**Recommended reading:** 
+**Recommended reading (Theory):** 
 
 (Release 1.0 **Type A+** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_arXiv.tex
 
@@ -27,6 +27,9 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 **IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl
 
+**Recommended reading (IMPL):**
+
+(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
 
 # Author (Tác giả) :
 
