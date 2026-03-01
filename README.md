@@ -13,17 +13,22 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 **Recommended reading (Theory):** 
 
-+ (Release 1.0 **Type S++** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
+-> (Release 1.0 **Type S++** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
 
 
 
-**Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
+**Experiment :** 
 
-**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl
+https://github.com/nahhididwin/L-Representation/tree/main/experiment
+
+**IMPL** : 
+
+https://github.com/nahhididwin/L-Representation/tree/main/impl
 
 **Recommended reading (IMPL):**
 
-+ (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
+-> (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
+
 
 *Lưu ý : Những files chưa được ghi đường dẫn trực tiếp (link) lên "https://github.com/nahhididwin/L-Representation/blob/main/README.md", thì khả năng cao là files đang trong quá trình thử nghiệm, và vẫn đang trong quá trình làm, vậy nên có thể có sai sót, sự cố nhiều hơn bình thường. Nếu bạn hứng thú và muốn xem những thông tin mới nhất có thể, tôi khuyên bạn nên đọc nó, nhưng dĩ nhiên là sẽ có rủi ro.
 
