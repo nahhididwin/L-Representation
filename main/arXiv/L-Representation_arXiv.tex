@@ -34,7 +34,7 @@
 \maketitle
 
 \begin{abstract}
-% Original bilingual abstract preserved in full (Vietnamese then English).
+
 \textbf{Tiếng Việt.} Bài báo này trình bày hoàn chỉnh L-Representation (L-Rep) mở rộng thành một hệ thống toán-hình học tổng quát có khả năng: (1) dịch biểu thức hình học phân cấp (SDF/CSG/scene-graph) sang một L-Virtual Machine (L-VM) được thực thi trực tiếp trên L-ALU với JIT compile vào primitives L_FIELD_OP; (2) nhúng đầy đủ Geometric Algebra (GA / Clifford algebra), đặc biệt Conformal Geometric Algebra (CGA), dưới dạng trường (fields) trong mã L cùng với primitive L_GA_MUL; (3) hỗ trợ native cho cấu trúc dữ liệu động (quadtree/octree/BVH tree) với primitives L_ALLOC/L_FREE/L_INSERT/L_SPLIT_MERGE giữ invariant “một số nguyên duy nhất”; (4) tích hợp trình sinh Chuỗi Taylor/Chebyshev với giới hạn sai số chặt chẽ và automatic differentiation (forward & reverse) trên toàn bộ expression trees. Tài liệu cung cấp mô hình hình thức, định nghĩa ISA, micro-architecture, chứng minh tính đúng đắn, và phân tích độ phức tạp.
 
 \textbf{English.} This paper presents a complete L-Representation (L-Rep) extension into a generalized mathematical-geometry system capable of: (1) translating hierarchical geometric expressions (SDF/CSG/scene-graph) to an L-Virtual Machine (L-VM) executed directly on L-ALU with JIT compilation into the primitives L_FIELD_OP; (2) fully embedding Geometric Algebra (GA/Clifford algebra), especially Conformal Geometric Algebra (CGA), as fields in L code along with the primitive L_GA_MUL; (3) native support for dynamic data structures (quadtree/octree/BVH tree) with the primitives L_ALLOC/L_FREE/L_INSERT/L_SPLIT_MERGE holding invariant “a single integer”; (4) integrating a Taylor/Chebyshev String generator with tight error limits and automatic differentiation (forward & reverse) across all expression trees. The document provides a formal model, ISA definition, micro-architecture, proof of correctness, and complexity analysis.
@@ -136,7 +136,7 @@ The compiler pipeline includes: parsing, canonicalization, field-layout allocati
 We include two worked examples with proofs sketches preserved from the original text: SDF scene evaluation (CSG) and robotic forward kinematics with CGA and autodiff.
 
 \section{Related Work (expanded; 1--1.5 pages)}
-% The user explicitly asked for a full Related Work comparing specific projects. Preserve original intent and add critical comparison.
+
 We compare L-Representation to several existing systems and libraries in the GA/geometry/ML ecosystems.
 
 \paragraph{Ganja.js}
@@ -195,13 +195,13 @@ L-Representation proposes an architecture-level unification of geometry, algebra
 \begin{appendix}
 
 \section{Appendix A: Formal proofs and numeric bounds}
-% We include key lemma statements and sketch proofs (full machine-checked proofs if available omitted for space).
+% I include key lemma statements and sketch proofs (full machine-checked proofs if available omitted for space).
 \subsection{Error composition lemmas}
-% (Omitted lengthy formal derivations; user original said full proofs in full appendix PDF — here we preserve claims and state that full proofs are in this appendix.)
+
 The theorems stated in \S2--\S6 hold under the assumptions enumerated in each theorem. The appendix contains exact constants for typical bitwidths (e.g., 32-bit field with 8 guard bits) and worked numeric examples.
 
 \section{Appendix B: Reproducible code snippets and figure scripts}
-% The user explicitly asked for code to implement figures — include scripts but do not embed actual generated figures.
+
 We include the critical Python code needed to reproduce microbenchmarks and to draw the figures referenced in the paper. The full repository (prototype) contains these files; below are the condensed versions included verbatim for reproducibility.
 
 \subsection{Python: bench/bench\_ga.py}
@@ -300,7 +300,6 @@ plt.savefig('figs/fig_sdf_comparison.png', dpi=200)
 plt.close()
 \end{lstlisting}
 
-% Allow the reader to produce higher-fidelity figures by running the bench scripts and modifying plotting code.
 
 \section{Appendix C: Related-work table and analytic performance model}
 % Provide a compact table and analytic formulae used to estimate speedups.
