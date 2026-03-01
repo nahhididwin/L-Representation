@@ -30,7 +30,13 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 # Author (Tác giả) :
 
-Full name : Dang Dinh Phu Hung (Đặng Đình Phú Hưng)
+Full name : Hung Dinh Phu Dang (Đặng Đình Phú Hưng)
+
+First Name: Hung
+
+Middle Name: Dinh Phu
+
+Last Name (Surname): Dang
 
 Nation : Vietnam
 
