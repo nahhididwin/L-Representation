@@ -15,13 +15,7 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 + (Release 1.0 **Type S++** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
 
-+ (Release 1.0 **Type A+** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_arXiv.tex
 
-+ (Release 1.0 **Type A-** - 28/02/2026 (DD/MM/YYYY) - English) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.txt
-
-+ (Release 1.0 **Type A-** - 28/02/2026 (DD/MM/YYYY) - English) (.md) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0a.md
-
-+ (Release 1.0 **Type B** - 27/02/2026 (DD/MM/YYYY) - Vietnamese) (.txt) https://github.com/nahhididwin/L-Representation/blob/main/main/release-1.0.txt
 
 **Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
 
