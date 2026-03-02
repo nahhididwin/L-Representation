@@ -56,6 +56,7 @@ Github : https://github.com/nahhididwin
 
 (01/03/2026 - DD/MM/YYYY) : Chắc t sẽ đặt tên là "Show HN:L-Rep:Geometry engine,GA multivectors,dynamic trees in a single integer" :)
 
+(02/03/2026 - DD/MM/YYYY) : Hacker News (Y Combinator) : https://news.ycombinator.com/item?id=47214471
 
 # License :
 
