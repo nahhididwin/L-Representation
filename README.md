@@ -3,9 +3,6 @@
 L-Representation: Turning a Single Integer L into a Universal, Provably-Correct Geometric & Algebraic Engine
 
 
-WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
-
-Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh **(KHÔNG PHẢI SINH VIÊN)** nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
 
 # Access (Truy cập) : 
 
@@ -17,14 +14,17 @@ Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một ngh
 
 
 
-**Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
-
-**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl
-
 **Recommended reading (IMPL):**
 
 (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
 
+
+
+==================
+
+**Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
+
+**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl
 
 
 # Author (Tác giả) :
@@ -58,3 +58,7 @@ Github : https://github.com/nahhididwin
 Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
 
 Repositories Public Date (https://github.com/nahhididwin/L-Representation) : 27/02/2026 (DD/MM/YYYY)
+
+WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
+
+Cảnh báo : Cho tới 28/02/2026 (DD/MM/YYYY), công trình này là một nghiên cứu lý thuyết ở giai đoạn đầu, được thực hiện độc lập bởi một học sinh **(KHÔNG PHẢI SINH VIÊN)** nghiên cứu. Do những hạn chế thực tế, phiên bản hiện tại tập trung vào việc xây dựng khái niệm và kiểm chứng sơ bộ. Tác giả hoan nghênh phản hồi, phê bình và sự hợp tác từ cộng đồng.
