@@ -10,7 +10,8 @@ L-Representation: Turning a Single Integer L into a Universal, Provably-Correct 
 
 **Recommended reading (Theory):** 
 
-(Release 1.0 **Type S++** - 01/03/2026 (DD/MM/YYYY) - English) (Preparing to post to arXiv - .tex) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
+
+(Release 1.0 ; 01/03/2026 (DD/MM/YYYY) - English) https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
 
 
 
