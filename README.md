@@ -6,7 +6,7 @@ L-Representation: Turning a Single Integer L into a Universal, Provably-Correct 
 
 # Access (Truy cập) : 
 
-**Major languages:** English, Vietnamese
+**Major languages:** English, Vietnamese;
 
 **Recommended reading (Theory):** 
 
@@ -16,19 +16,19 @@ L-Representation: Turning a Single Integer L into a Universal, Provably-Correct 
 
 (**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
 
+**Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
 
 
 **Recommended reading (IMPL):**
 
-(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2
+(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 ;
 
 
 
 ==================
 
-**Experiment :** https://github.com/nahhididwin/L-Representation/tree/main/experiment
 
-**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl
+**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl ;
 
 
 # Author (Tác giả) :
