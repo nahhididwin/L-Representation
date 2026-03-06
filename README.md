@@ -12,9 +12,9 @@ L-Representation: Turning a Single Integer L into a Universal, Provably-Correct 
 
 **RELEASE 1.0 :**
 
-(**PDF** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf
+(**PDF** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf ;
 
-(**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex
+(**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex ;
 
 **Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
 
