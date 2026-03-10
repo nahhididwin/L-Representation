@@ -57,7 +57,7 @@ Github : https://github.com/nahhididwin
 
 (02/03/2026 - DD/MM/YYYY) : Hacker News (Y Combinator) : https://news.ycombinator.com/item?id=47214471
 
-(11/03/2026 - DD/MM/YYYY) : Haizz... nhìn chung cũng mệt ._.
+(11/03/2026 - DD/MM/YYYY) : Haizz... nhìn chung cũng mệt ._., btw i want L-Rep <=> 1 mô hình tính toán mới của hình học/đại số;
 
 # License :
 
