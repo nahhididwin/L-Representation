@@ -57,6 +57,8 @@ Github : https://github.com/nahhididwin
 
 (02/03/2026 - DD/MM/YYYY) : Hacker News (Y Combinator) : https://news.ycombinator.com/item?id=47214471
 
+(11/03/2026 - DD/MM/YYYY) : Haizz... nhìn chung cũng mệt ._.
+
 # License :
 
 Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
