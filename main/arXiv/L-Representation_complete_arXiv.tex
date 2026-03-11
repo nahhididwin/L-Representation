@@ -230,7 +230,7 @@ We provide a constructive algorithm used by the compiler to compute per-field \(
 
 Algorithm pseudo-code is given below.
 
-\begin{lstlisting}[language=Python,caption={Algorithm: Bit-width and segmentation (pseudo-code)}]
+\begin{verbatim}[language=Python,caption={Algorithm: Bit-width and segmentation (pseudo-code)}]
 # Input: DAG T, input_intervals per-field (L_i,U_i), scale factors sigma_i, threshold tau
 # Output: storage bits b_i, segment boundaries
 
@@ -266,7 +266,7 @@ def allocate_bits_and_segment(Q, tau):
     for k in fields:
         b_final[k] = max(b[v,k] for v in segment_leaders)
     return b_final, segments
-\end{lstlisting}
+\end{verbatim}
 
 The formal correctness of this algorithm is a direct corollary of Theorems~\ref{thm:nobleed} and~\ref{thm:segmented}.
 
@@ -378,7 +378,7 @@ Below we include a polished and extended prototype (single-file) that:
 
 The listing is intentionally self-contained. Copy–paste into a file named \verb|lrep_complete_prototype.py| and run with Python+NumPy.
 
-\begin{lstlisting}[language=Python,caption={lrep_complete_prototype.py — extended prototype (abridged but runnable)}]
+\begin{verbatim}[language=Python,caption={lrep_complete_prototype.py — extended prototype (abridged but runnable)}]
 #!/usr/bin/env python3
 # Extended prototype: bit allocation + guarded GA multiply
 # Requirements: Python 3.9+, NumPy
@@ -531,7 +531,7 @@ def demo_allocation_and_ga():
 
 if __name__ == "__main__":
     demo_allocation_and_ga()
-\end{lstlisting}
+\end{verbatim}
 
 \paragraph{How to run} Save as \texttt{lrep_complete_prototype.py} and run with Python 3 (NumPy required). The demo computes propagation bounds, allocates bits, performs GA multiply, and asserts verified bounds.
 
