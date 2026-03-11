@@ -1,7 +1,6 @@
 # L-Representation
 
-L-Representation: Turning a Single Integer L into a Universal, Provably-Correct Geometric & Algebraic Engine
-
+L-Representation: A Provably-Correct Single-Integer Substrate Unifying Geometry and Algebra
 
 
 # Access (Truy cập) : 
