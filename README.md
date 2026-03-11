@@ -7,7 +7,7 @@ L-Representation: A Provably-Correct Single-Integer Substrate Unifying Geometry 
 
 **Major languages:** English, Vietnamese;
 
-**Recommended reading (Theory):** 
+**Recommended reading (Theory + IMPL):** 
 
 **RELEASE 1.0 Type A :**
 
