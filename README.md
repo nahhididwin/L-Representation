@@ -11,9 +11,9 @@ L-Representation: A Provably-Correct Single-Integer Substrate Unifying Geometry 
 
 **RELEASE 1.0 Type A :**
 
-(**PDF** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf
+(**PDF** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf ;
 
-(**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex
+(**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex ;
 
 
 **RELEASE 1.0 Type B :**
