@@ -29,7 +29,7 @@ L-Representation: A Provably-Correct Single-Integer Substrate Unifying Geometry 
 
 (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 ;
 
-
+(A3) 
 
 ==================
 
