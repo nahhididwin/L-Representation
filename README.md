@@ -10,6 +10,8 @@ L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for
 
 **RELEASE 2.0 :**
 
+(**.pdf**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.pdf ; 
+
 (**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex ;
 
 **RELEASE 1.0 Type A+ :**
