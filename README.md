@@ -1,7 +1,6 @@
 # L-Representation
 
-L-Representation: A Provably-Correct Single-Integer Substrate Unifying Geometry and Algebra
-
+L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for Geometric and Algebraic Computing
 
 # Access (Truy cập) : 
 
