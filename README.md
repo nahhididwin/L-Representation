@@ -6,6 +6,9 @@ L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for
 
 **Major languages:** English, Vietnamese;
 
+====================================
+
+
 **Recommended reading (Theory + IMPL):** 
 
 **RELEASE 2.0 :**
@@ -29,6 +32,8 @@ L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for
 
 **Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
 
+====================================
+
 
 **Recommended reading (IMPL):**
 
@@ -36,7 +41,8 @@ L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for
 
 (A3) 
 
-==================
+====================================
+
 
 
 **IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl ;
