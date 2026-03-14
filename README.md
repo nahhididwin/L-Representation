@@ -39,7 +39,7 @@ L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for
 
 (A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 ;
 
-(A3) 
+(A3) https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex
 
 ====================================
 
