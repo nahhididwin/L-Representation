@@ -76,7 +76,7 @@ Github : https://github.com/nahhididwin
 
 (11/03/2026 - DD/MM/YYYY) : Haizz... nhìn chung cũng mệt ._., btw i want L-Rep <=> 1 mô hình tính toán mới của hình học/đại số;
 
-# License :
+# License and Warning :
 
 Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
 
