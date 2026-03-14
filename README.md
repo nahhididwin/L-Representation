@@ -1,4 +1,4 @@
-# L-Representation
+# L-Representation (L-Rep)
 
 L-Representation: Provably-Correct Finite-Precision Single-Integer Substrate for Geometric and Algebraic Computing
 
