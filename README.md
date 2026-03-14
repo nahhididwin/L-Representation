@@ -72,7 +72,7 @@ Github : https://github.com/nahhididwin
 
 (01/03/2026 - DD/MM/YYYY) : Chắc t sẽ đặt tên là "Show HN: L-Rep:Geometry engine,GA multivectors,dynamic trees in a single integer" :)?
 
-(02/03/2026 - DD/MM/YYYY) : Hacker News (Y Combinator) : https://news.ycombinator.com/item?id=47214471
+(02/03/2026 - DD/MM/YYYY) : Hacker News (Y Combinator) (Release 1.0 + A2, not newest) : https://news.ycombinator.com/item?id=47214471
 
 (11/03/2026 - DD/MM/YYYY) : Haizz... nhìn chung cũng mệt ._., btw i want L-Rep <=> 1 mô hình tính toán mới của hình học/đại số;
 
