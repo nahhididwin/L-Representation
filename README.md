@@ -17,7 +17,7 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 (**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-3.0.tex
 
-Peer-review (scispace) : 
+Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/main/peer-review/3.0
 
 **RELEASE 2.0 A :**
 
