@@ -29,26 +29,26 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/main/peer-review/3.0
 
-**BETA 2.0 A :**
+**Beta 2.0 A :**
 
 (**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.pdf ;
 
 (**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.tex ;
 
-**BETA 2.0 B :**
+**Beta 2.0 B :**
 
 (**.pdf**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.pdf ; 
 
 (**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex ;
 
-**BETA 1.0 Type A+ :**
+**Beta 1.0 Type A+ :**
 
 (**PDF** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf ;
 
 (**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex ;
 
 
-**BETA 1.0 Type B :**
+**Beta 1.0 Type B :**
 
 (**PDF** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf ;
 
