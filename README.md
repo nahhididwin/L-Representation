@@ -11,6 +11,13 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 **Recommended reading (Theory + IMPL):** 
 
+**RELEASE 3.1 :**
+
+(**.pdf**;16/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_v3_Paper.pdf
+
+(**.tex**;16/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_v3_Paper%20(1).tex
+
+
 **RELEASE 3.0 :**
 
 (**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/a8.pdf
