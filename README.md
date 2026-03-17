@@ -18,7 +18,7 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 
 
-**Beta 3.1 :**
+Beta 3.1 :
 
 (Read the RELEASE versions to ensure the most accurate information)
 
@@ -36,7 +36,7 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/main/peer-review/3.0
 
-**Beta 2.0 A :**
+Beta 2.0 A :
 
 (Read the RELEASE versions to ensure the most accurate information)
 
@@ -45,7 +45,7 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 (**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.tex 
 
-**Beta 2.0 B :**
+Beta 2.0 B :
 
 (Read the RELEASE versions to ensure the most accurate information)
 
@@ -54,7 +54,7 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 (**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex 
 
-**Beta 1.0 Type A+ :**
+Beta 1.0 Type A+ :
 
 (Read the RELEASE versions to ensure the most accurate information)
 
@@ -64,7 +64,7 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 (**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex 
 
 
-**Beta 1.0 Type B :**
+Beta 1.0 Type B :
 
 (Read the RELEASE versions to ensure the most accurate information)
 
