@@ -1,6 +1,6 @@
 # L-Representation (L-Rep)
 
-L-Representation: From empirical to certified: the first formally guaranteed finite-precision framework for Geometric Algebra (GA) and structured algebraic computation. And A Finite-Precision Single-Integer Substrate for Geometric Algebra (GA) Computing.
+L-Representation: A Formally Verified Finite-Precision Single-Integer Substrate for Geometric Algebra Computing
 
 # Access (Truy cập) : 
 
