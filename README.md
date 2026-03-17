@@ -19,14 +19,14 @@ L-Representation: Formally Verified Finite-Precision Packed-Integer Arithmetic f
 **Recommended reading (Theory + IMPL):** 
 
 
-**RELEASE 4.0 :**
+**Beta 4.0 :**
 
 (**.pdf**;17/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-4.0.pdf
 
 (**.tex**;17/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-4.0.tex
 
 
-**RELEASE 3.0 :**
+**Release 3.0 :**
 
 (**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/a8.pdf
 
