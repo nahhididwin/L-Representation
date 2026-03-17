@@ -1,7 +1,7 @@
 # L-Representation (L-Rep)
 
-L-Representation: Formally Verified Finite-Precision Packed-Integer Arithmetic for Structured Algebras,\\
-Applied to Geometric Algebra Hardware and Safety-Critical Systems
+
+L-Representation: Formally Verified Finite-Precision Packed-Integer Arithmetic for Structured Algebras, Applied to Geometric Algebra Hardware and Safety-Critical Systems
 
 # Access (Truy cập) : 
 
