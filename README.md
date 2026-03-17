@@ -8,10 +8,11 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 ====================================
 
+**Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
+
 
 **Recommended reading (Theory + IMPL):** 
 
-**Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
 
 
 **Beta 3.1 :**
