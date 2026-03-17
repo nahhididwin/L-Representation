@@ -4,6 +4,9 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 # Access (Truy cập) : 
 
+**Small warning :** I recommend that you only read what I have written here (README.md), the links here, you can click on them to read the details. You can view the files in the folders in my repository, but I do not recommend it.
+
+
 **Major languages:** English, Vietnamese;
 
 ====================================
