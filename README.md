@@ -11,6 +11,9 @@ L-Representation: From empirical to certified: the first formally guaranteed fin
 
 **Recommended reading (Theory + IMPL):** 
 
+**Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
+
+
 **Beta 3.1 :**
 
 (Read the RELEASE versions to ensure the most accurate information)
@@ -66,7 +69,6 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 (**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex ;
 
-**Warning: There are some minor text-related errors in the PDF; please check both the PDF and the .tex files!**;
 
 ====================================
 
