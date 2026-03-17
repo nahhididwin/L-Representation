@@ -35,45 +35,6 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 
 
-Beta 2.0 A :
-
-(Read the RELEASE versions to ensure the most accurate information)
-
-
-(**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.pdf 
-
-(**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.tex 
-
-Beta 2.0 B :
-
-(Read the RELEASE versions to ensure the most accurate information)
-
-
-(**.pdf**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.pdf 
-
-(**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex 
-
-Beta 1.0 Type A+ :
-
-(Read the RELEASE versions to ensure the most accurate information)
-
-
-(**.pdf** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf 
-
-(**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex 
-
-
-Beta 1.0 Type B :
-
-(Read the RELEASE versions to ensure the most accurate information)
-
-
-(**.pdf** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf 
-
-(**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex 
-
-
-
 
 ====================================
 
