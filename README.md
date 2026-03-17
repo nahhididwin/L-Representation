@@ -38,27 +38,27 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 (Read the RELEASE versions to ensure the most accurate information)
 
 
-(**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.pdf ;
+(**.pdf**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.pdf 
 
-(**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.tex ;
+(**.tex**;15/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0a.tex 
 
 **Beta 2.0 B :**
 
 (Read the RELEASE versions to ensure the most accurate information)
 
 
-(**.pdf**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.pdf ; 
+(**.pdf**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.pdf 
 
-(**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex ;
+(**.tex**;12/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex 
 
 **Beta 1.0 Type A+ :**
 
 (Read the RELEASE versions to ensure the most accurate information)
 
 
-(**PDF** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf ;
+(**PDF** ;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.pdf 
 
-(**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex ;
+(**.tex**;11/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-Representation_complete_arXiv.tex 
 
 
 **Beta 1.0 Type B :**
@@ -66,9 +66,9 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 (Read the RELEASE versions to ensure the most accurate information)
 
 
-(**PDF** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf ;
+(**PDF** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.pdf 
 
-(**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex ;
+(**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex 
 
 
 ====================================
@@ -76,7 +76,7 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 **Recommended reading (IMPL):**
 
-(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 ;
+(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 
 
 (A3) https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex
 
@@ -84,7 +84,7 @@ Peer-review (scispace) : https://github.com/nahhididwin/L-Representation/tree/ma
 
 
 
-**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl ;
+**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl 
 
 
 # Author (Tác giả) :
