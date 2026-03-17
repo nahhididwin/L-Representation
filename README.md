@@ -74,20 +74,12 @@ Beta 1.0 Type B :
 (**.tex** ;01/03/2026 (DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/arXiv/L-RepresentationS%2B%2B_arXiv.tex 
 
 
-====================================
 
-
-**Recommended reading (IMPL):**
-
-(A2) https://github.com/nahhididwin/L-Representation/tree/main/impl/exper/A2 
-
-(A3) https://github.com/nahhididwin/L-Representation/blob/main/main/rl-2.0.tex
 
 ====================================
 
 
 
-**IMPL** : https://github.com/nahhididwin/L-Representation/tree/main/impl 
 
 
 # Author (Tác giả) :
