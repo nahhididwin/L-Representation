@@ -19,6 +19,8 @@ L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point
 
 **Recommended reading (Theory + IMPL):** 
 
+**Release 4.1 :** in working
+
 
 **Beta 4.0 :** 
 
