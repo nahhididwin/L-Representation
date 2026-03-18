@@ -1,7 +1,8 @@
 # L-Representation (L-Rep)
 
 
-L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Algebras, with Applications to Geometric Algebra Hardware
+L-Representation: Formally Verified Fixed-Point Arithmetic for Geometric Algebra, with Tight Bounds for Constrained Motor Inputs
+
 
 
 # Access (Truy cập) : 
