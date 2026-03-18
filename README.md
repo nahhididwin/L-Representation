@@ -24,6 +24,9 @@ L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point
 
 Title : L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Algebras, with Applications to Geometric Algebra Hardware
 
+note : The PDF file has an incorrect title; I tried to fix it but couldn't.
+
+
 (**.pdf**;17/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-4.0.pdf
 
 (**.tex**;17/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-4.0.tex
