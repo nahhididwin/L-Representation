@@ -19,8 +19,13 @@ L-Representation: A Formally Verified Bit-Allocation Engine for Fixed-Point Arit
 
 **Recommended reading (Theory + IMPL):** 
 
-**Release 4.1 :** in working
+**Beta 4.1 :** 
 
+
+
+(**.pdf**;18/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
+
+(**.tex**;18/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
 
 **Beta 4.0 :** (Some major experimental issues are degrading the practical value of Paper; the theory and mathematics remain correct. I am fixing them, and version 4.1 is estimated to be complete.) 
 
