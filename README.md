@@ -1,7 +1,8 @@
 # L-Representation (L-Rep)
 
 
-L-Representation: Formally Verified Finite-Precision Packed-Integer Arithmetic for Structured Algebras, Applied to Geometric Algebra Hardware and Safety-Critical Systems
+L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Algebras, with Applications to Geometric Algebra Hardware
+
 
 # Access (Truy cập) : 
 
@@ -19,7 +20,9 @@ L-Representation: Formally Verified Finite-Precision Packed-Integer Arithmetic f
 **Recommended reading (Theory + IMPL):** 
 
 
-**Beta 4.0 :**
+**Beta 4.0 :** 
+
+Title : L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Algebras, with Applications to Geometric Algebra Hardware
 
 (**.pdf**;17/03/2026(DD/MM/YYYY);English): https://github.com/nahhididwin/L-Representation/blob/main/main/rl-4.0.pdf
 
