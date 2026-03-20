@@ -86,6 +86,8 @@ Github : https://github.com/nahhididwin
 
 (20/03/2026 - DD/MM/YYYY) : vaiz c, bđt tam giác cô-si ở lớp 9 bưng vào trong paper này :yum:
 
+(20/03/2026 - DD/MM/YYYY) : Tôi dự định chuẩn bị up lên Hacker News (YC) lần 2
+
 # License and Warning :
 
 Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
