@@ -84,6 +84,8 @@ Github : https://github.com/nahhididwin
 
 (17/03/2026 - DD/MM/YYYY) : WOW!
 
+(20/03/2026 - DD/MM/YYYY) : vaiz c, bđt tam giác cô-si ở lớp 9 bưng vào trong paper này :yum:
+
 # License and Warning :
 
 Read : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
