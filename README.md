@@ -1,7 +1,7 @@
 # L-Representation (L-Rep)
 
 
-L-Representation: A Formally Verified Bit-Allocation Engine for Fixed-Point Arithmetic in Structured Convolution Algebras
+L-Representation: A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Convolution Algebras, with Applications to Hardware
 
 
 # Access (Truy cập) : 
