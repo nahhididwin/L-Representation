@@ -26,25 +26,15 @@ View **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L
 - Proofs (Lean 4): see middle sections  
 - Implementation + experiments: see later sections  
 
-**Debug:**
+**Debug and more info:**
 
-If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
+- If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
 
 
 
-**If you would like to read more** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
+- **If you would like to read more** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
 
-**All versions and repositories are here:** https://github.com/nahhididwin/L-Representation
+- **All versions and repositories are here:** https://github.com/nahhididwin/L-Representation
 
 This is early-stage work — I’d really appreciate feedback from people!
 
-
-# More info :
-
-License : https://github.com/nahhididwin/L-Representation?tab=License-1-ov-file
-
-Repositories Public Date (https://github.com/nahhididwin/L-Representation) : 27/02/2026 (DD/MM/YYYY)
-
-WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
-
-(You are reading version v4.0-beta)
