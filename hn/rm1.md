@@ -4,7 +4,7 @@
 
 **Major languages:** English
 
-Thank you for your interest!
+Thank you for your interest! I recommend you look at the things you want to see first, don't read the whole paper ^^!
 
 
 # Index of PDF and More :
