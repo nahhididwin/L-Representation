@@ -7,9 +7,7 @@
 
 # Index of PDF and More :
 
-Watch **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
-
-If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
+**Index of PDF :**
 
 Abstract : Pages 1, 2
 
@@ -20,6 +18,14 @@ Experiment, Algorithm, Compare (Codes, Lean 4,...) : Pages 12 -> 31
 References : Pages 31, 32
 
 Proof (Math) : Pages 6 -> 11
+
+**Watch :**
+
+Watch **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
+
+If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
+
+
 
 **If you would like to read more!** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
 
