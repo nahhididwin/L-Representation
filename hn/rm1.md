@@ -1,4 +1,4 @@
-# L-Representation (L-Rep) : Safer Fixed-Point Arithmetic for Hardware Using Formal Methods!
+# Safer Fixed-Point Arithmetic for Hardware Using Formal Methods!
 
 (A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Convolution Algebras, with Applications to Hardware)
 
