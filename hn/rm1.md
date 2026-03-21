@@ -19,22 +19,14 @@ We formalized the system in Lean 4 (no sorry proofs), and evaluated it on FPGA a
 - competitive throughput vs float32, with formal guarantees
 
 
-View **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
+**Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
+
+**Supplementary** : https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
 
 **If you're skimming:**
 
 - Proofs (Lean 4): see middle sections  
 - Implementation + experiments: see later sections  
-
-**Debug and more info:**
-
-- If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
-
-
-
-- **If you would like to read more** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
-
-- **All versions and repositories are here:** https://github.com/nahhididwin/L-Representation
 
 This is early-stage work — I’d really appreciate feedback from people!
 
