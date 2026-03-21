@@ -10,7 +10,7 @@ The core idea is a bit-allocation scheme that:
 - packs structured algebra computations into a single integer word
 - provides tight, formally verified error bounds for every operation
 
-We formalized the system in Lean 4 (no sorry proofs), and evaluated it.
+We formalized the system in Lean 4 (no sorry proofs), and evaluated it on FPGA and GPU workloads.
 
 Preliminary results show:
 
