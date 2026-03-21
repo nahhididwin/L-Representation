@@ -1,10 +1,22 @@
-# Safer Fixed-Point Arithmetic for Hardware Using Formal Methods!
+# Avoiding Overflow Bugs in Fixed-Point Arithmetic with Formal Verification
 
 (A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Convolution Algebras, with Applications to Hardware)
 
-**Major languages:** English
+We built L-Representation (L-Rep), A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Convolution Algebras, with Applications to Hardware
 
-Thank you for your interest! I recommend you look at the things you want to see first, don't read the whole paper ^^!
+It targets hardware/DSP/safety-critical workloads/Geometric Algebra/... where overflow and precision bugs are hard to reason about.
+
+The core idea is a bit-allocation scheme that:
+- packs structured algebra computations into a single integer word
+- provides tight, formally verified error bounds for every operation
+
+We formalized the system in Lean 4 (no sorry proofs), and tested it.
+
+Preliminary results show:
+- higher efficiency per DSP vs standard approaches
+- no overflow ("bleed") across millions of adversarial tests
+- competitive throughput vs float32, with formal guarantees
+
 
 
 # Index of PDF and More :
@@ -21,19 +33,17 @@ References : Pages 31, 32
 
 Proof (Math) : Pages 6 -> 11
 
-**Watch Now :**
+**Read Now :**
 
 Watch **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
 
-If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
-
-
-
 **If you would like to read more!** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
+
+If your paper visibility is faulty, please check the **.tex** file: https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.tex
 
 **All versions and repositories are here:** https://github.com/nahhididwin/L-Representation
 
-(You are reading version v4.0-beta)
+This is early-stage work — I’d really appreciate feedback from people!
 
 
 # More info :
@@ -44,22 +54,4 @@ Repositories Public Date (https://github.com/nahhididwin/L-Representation) : 27/
 
 WARNING : At the time of 28/02/2026 (DD/MM/YYYY), this work is an early-stage theoretical exploration developed independently by a student researcher. Due to practical constraints, the current version focuses on conceptual formulation and preliminary validation. The author welcomes feedback, critique, and collaboration from the community.
 
-
-
-# Author :
-
-Full name : Hung Dinh Phu Dang (Đặng Đình Phú Hưng)
-
-First Name: Hung
-
-Middle Name: Dinh Phu
-
-Last Name (Surname): Dang
-
-Nation : Vietnam
-
-City : Ho Chi Minh City
-
-Date of birth: https://github.com/nahhididwin/L-Representation/blob/main/main/dob.txt
-
-Github : https://github.com/nahhididwin
+(You are reading version v4.0-beta)
