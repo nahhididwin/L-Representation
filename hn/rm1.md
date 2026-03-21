@@ -5,14 +5,14 @@ We built L-Representation (L-Rep), a framework for fixed-point arithmetic with m
 It targets hardware, safety-critical and DSP workloads where overflow and precision bugs are difficult to reason about.
 
 
-The core idea is a bit-allocation scheme that:
+**The core idea is a bit-allocation scheme that:**
 
 - packs structured algebra computations into a single integer word
 - provides tight, formally verified error bounds for every operation
 
 We formalized the system in Lean 4 (no sorry proofs), and evaluated it on FPGA and GPU workloads.
 
-Preliminary results show:
+**Preliminary results show:**
 
 - higher efficiency per DSP vs standard approaches
 - no overflow ("bleed") across millions of adversarial tests
