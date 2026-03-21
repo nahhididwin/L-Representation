@@ -2,7 +2,7 @@
 
 We built L-Representation (L-Rep), a framework for fixed-point arithmetic with machine-checked guarantees.
 
-It targets hardware, safety-critical and DSP workloads where overflow and precision bugs are difficult to reason about.
+It targets hardware, safety-critical and DSP workloads where overflow and precision bugs are difficult to reason about. In these settings, small numerical errors can be extremely hard to detect and debug.
 
 
 **The core idea is a bit-allocation scheme that:**
