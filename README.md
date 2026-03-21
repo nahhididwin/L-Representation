@@ -88,7 +88,7 @@ Github : https://github.com/nahhididwin
 
 (20/03/2026 - DD/MM/YYYY) : Tôi dự định chuẩn bị up lên Hacker News (YC) lần 2
 
-(21/03/2026 - DD/MM/YYYY) : https://github.com/nahhididwin/L-Representation/blob/main/hn/rm1.md
+(21/03/2026 - DD/MM/YYYY) : https://news.ycombinator.com/item?id=47467096
 
 # License and Warning :
 
