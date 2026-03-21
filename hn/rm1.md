@@ -1,4 +1,4 @@
-# L-Representation (L-Rep) : Safer Fixed-Point Arithmetic for Hardware Using Formal Methods! (v4.0-beta)
+# L-Representation (L-Rep) : Safer Fixed-Point Arithmetic for Hardware Using Formal Methods!
 
 (A Formally Verified Framework for Constraint-Aware Fixed-Point Arithmetic in Structured Convolution Algebras, with Applications to Hardware)
 
@@ -30,6 +30,8 @@ If your paper visibility is faulty, please check the **.tex** file: https://gith
 **If you would like to read more!** (supplementary version): https://github.com/nahhididwin/L-Representation/blob/main/main/LRep_Supplementary_Corrigenda.tex
 
 **All versions and repositories are here:** https://github.com/nahhididwin/L-Representation
+
+(You are reading version v4.0-beta)
 
 
 # More info :
