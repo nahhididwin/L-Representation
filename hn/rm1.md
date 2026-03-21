@@ -19,7 +19,7 @@ References : Pages 31, 32
 
 Proof (Math) : Pages 6 -> 11
 
-**Watch :**
+**Watch Now :**
 
 Watch **Paper** (Proof + Experiment) **(PDF)** : https://github.com/nahhididwin/L-Representation/blob/main/main/lrep_final.pdf
 
